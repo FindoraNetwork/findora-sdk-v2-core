@@ -1,0 +1,13 @@
+*.log
+.DS_Store
+node_modules
+coverage/
+.idea/
+docs
+.pytest_cache
+yarn.lock
+cache/
+.env*
+.gitconfig
+src/run.ts
+build/
