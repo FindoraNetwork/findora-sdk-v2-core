@@ -31,6 +31,5 @@
       "_src/*": ["src/*"],
       "_services/*": ["src/services/*"]
     }
-    // "allowJs": true
   }
 }

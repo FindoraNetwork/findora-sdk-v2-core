@@ -42,7 +42,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var dotenv_1 = __importDefault(require("dotenv"));
 var index_1 = require("./index");
 dotenv_1.default.config();
-var waitingTimeBeforeCheckTxStatus = 19000;
 /**
  * Prior to using SDK we have to initialize its environment configuration
  */
@@ -64,7 +63,7 @@ index_1.Sdk.init(sdkEnv);
 function testIt() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            console.log('Hello world');
+            console.log('Hello world !');
             return [2 /*return*/];
         });
     });

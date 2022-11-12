@@ -9,4 +9,5 @@ cache/
 .env*
 .gitconfig
 src/run.ts
+dist/run.js
 build/
