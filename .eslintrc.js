@@ -31,8 +31,6 @@ module.exports = {
     radix: ['warn', 'always'],
     'spaced-comment': ['warn', 'always', { line: { markers: ['/ <reference'] } }],
     'import/no-cycle': 'warn',
-    'simple-import-sort/imports': 'warn',
-    'simple-import-sort/exports': 'warn',
     '@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
     '@typescript-eslint/await-thenable': 'warn',
     '@typescript-eslint/no-var-requires': 'warn',
