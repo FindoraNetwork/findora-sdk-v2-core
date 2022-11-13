@@ -1,6 +1,6 @@
-import fs from 'fs';
-import crypto from 'crypto';
 // const crypto = require('crypto');
+import crypto from 'crypto';
+import fs from 'fs';
 
 export const uint8arrayToHexStr = (input: Uint8Array): string => Buffer.from(input).toString('hex');
 
