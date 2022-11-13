@@ -20,6 +20,8 @@
   "author": "Findora Network <oleksandr@findora.org>",
   "license": "ISC",
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
+    "@types/json-bigint": "^1.0.0",
     "@types/node": "^14.14.17",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^5.37.0",
@@ -34,13 +36,12 @@
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "typescript": "^4.8.4",
-    "typescript-json-schema": "^0.50.1",
-    "@types/json-bigint": "^1.0.0"
+    "typescript-json-schema": "^0.50.1"
   },
   "dependencies": {
     "bignumber.js": "^9.0.1",
-    "json-bigint": "^1.0.0",
     "dotenv": "^10.0.0",
-    "findora-wallet-wasm": "https://github.com/FindoraNetwork/wasm-js-bindings.git#develop"
+    "findora-wallet-wasm": "https://github.com/FindoraNetwork/wasm-js-bindings.git#develop",
+    "json-bigint": "^1.0.0"
   }
 }
