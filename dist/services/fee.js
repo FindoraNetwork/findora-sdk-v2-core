@@ -35,48 +35,59 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getLedger = exports.getNodeLedger = exports.getWebLedger = exports.isItNodeEnv = void 0;
-var nodeLedger_1 = __importDefault(require("./nodeLedger"));
-var webLedger_1 = __importDefault(require("./webLedger"));
-var isItNodeEnv = function () { return typeof process !== 'undefined' && process.release.name === 'node'; };
-exports.isItNodeEnv = isItNodeEnv;
-var getWebLedger = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var myLedger;
+exports.getFraPublicKey = exports.getBarToAbarMinimalFee = exports.getMinimalFee = exports.getFraAssetCode = void 0;
+var ledgerWrapper_1 = require("../services/ledger/ledgerWrapper");
+var getFraAssetCode = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var ledger, assetCode;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, (0, webLedger_1.default)()];
+            case 0: return [4 /*yield*/, (0, ledgerWrapper_1.getLedger)()];
             case 1:
-                myLedger = _a.sent();
-                return [2 /*return*/, myLedger];
+                ledger = _a.sent();
+                assetCode = ledger.fra_get_asset_code();
+                return [2 /*return*/, assetCode];
         }
     });
 }); };
-exports.getWebLedger = getWebLedger;
-var getNodeLedger = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var myLedger;
+exports.getFraAssetCode = getFraAssetCode;
+var getMinimalFee = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var ledger, fee;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, (0, nodeLedger_1.default)()];
+            case 0: return [4 /*yield*/, (0, ledgerWrapper_1.getLedger)()];
             case 1:
-                myLedger = _a.sent();
-                return [2 /*return*/, myLedger];
+                ledger = _a.sent();
+                fee = ledger.fra_get_minimal_fee();
+                return [2 /*return*/, fee];
         }
     });
 }); };
-exports.getNodeLedger = getNodeLedger;
-var getLedger = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var isNodeEnv;
+exports.getMinimalFee = getMinimalFee;
+var getBarToAbarMinimalFee = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var ledger, fee;
     return __generator(this, function (_a) {
-        isNodeEnv = (0, exports.isItNodeEnv)();
-        if (isNodeEnv) {
-            return [2 /*return*/, (0, exports.getNodeLedger)()];
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, (0, ledgerWrapper_1.getLedger)()];
+            case 1:
+                ledger = _a.sent();
+                fee = ledger.fra_get_minimal_fee_for_bar_to_abar();
+                return [2 /*return*/, fee];
         }
-        return [2 /*return*/, (0, exports.getWebLedger)()];
     });
 }); };
-exports.getLedger = getLedger;
-//# sourceMappingURL=ledgerWrapper.js.map
+exports.getBarToAbarMinimalFee = getBarToAbarMinimalFee;
+var getFraPublicKey = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var ledger, key;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, (0, ledgerWrapper_1.getLedger)()];
+            case 1:
+                ledger = _a.sent();
+                key = ledger.fra_get_dest_pubkey();
+                return [2 /*return*/, key];
+        }
+    });
+}); };
+exports.getFraPublicKey = getFraPublicKey;
+//# sourceMappingURL=fee.js.map
