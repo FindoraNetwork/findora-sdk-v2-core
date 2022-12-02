@@ -1,7 +1,17 @@
-export { getLedger, getNodeLedger, getWebLedger, Ledger } from './services/ledger/ledgerWrapper';
+export {
+  getLedger,
+  getNodeLedger,
+  getWebLedger,
+  Ledger,
+  LedgerForNode,
+  LedgerForWeb,
+  webLedger,
+  nodeLedger,
+  isItNodeEnv,
+} from './services/ledger/ledgerWrapper';
 
-export { LedgerForNode } from './services/ledger/nodeLedger';
-export { LedgerForWeb } from './services/ledger/webLedger';
+// export { LedgerForNode } from './services/ledger/nodeLedger';
+// export { LedgerForWeb } from './services/ledger/webLedger';
 
 export * as ledgerTypes from './services/ledger/types';
 export * as utils from './services/utils';

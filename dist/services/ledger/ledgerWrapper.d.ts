@@ -1,5 +1,9 @@
-import { LedgerForNode } from './nodeLedger';
-import { LedgerForWeb } from './webLedger';
+import { LedgerForNode as LedgerForNodeL } from './nodeLedger';
+import { LedgerForWeb as LedgerForWebL } from './webLedger';
+export * as webLedger from './webLedger';
+export * as nodeLedger from './nodeLedger';
+export type LedgerForWeb = LedgerForWebL;
+export type LedgerForNode = LedgerForNodeL;
 export type Ledger = LedgerForNode | LedgerForWeb;
 export declare const isItNodeEnv: () => boolean;
 export declare const getWebLedger: () => Promise<Ledger>;

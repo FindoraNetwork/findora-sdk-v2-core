@@ -23,11 +23,16 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Sdk = exports.bigNumber = exports.feeService = exports.rangerHelper = exports.utils = exports.ledgerTypes = exports.getWebLedger = exports.getNodeLedger = exports.getLedger = void 0;
+exports.Sdk = exports.bigNumber = exports.feeService = exports.rangerHelper = exports.utils = exports.ledgerTypes = exports.isItNodeEnv = exports.nodeLedger = exports.webLedger = exports.getWebLedger = exports.getNodeLedger = exports.getLedger = void 0;
 var ledgerWrapper_1 = require("./services/ledger/ledgerWrapper");
 Object.defineProperty(exports, "getLedger", { enumerable: true, get: function () { return ledgerWrapper_1.getLedger; } });
 Object.defineProperty(exports, "getNodeLedger", { enumerable: true, get: function () { return ledgerWrapper_1.getNodeLedger; } });
 Object.defineProperty(exports, "getWebLedger", { enumerable: true, get: function () { return ledgerWrapper_1.getWebLedger; } });
+Object.defineProperty(exports, "webLedger", { enumerable: true, get: function () { return ledgerWrapper_1.webLedger; } });
+Object.defineProperty(exports, "nodeLedger", { enumerable: true, get: function () { return ledgerWrapper_1.nodeLedger; } });
+Object.defineProperty(exports, "isItNodeEnv", { enumerable: true, get: function () { return ledgerWrapper_1.isItNodeEnv; } });
+// export { LedgerForNode } from './services/ledger/nodeLedger';
+// export { LedgerForWeb } from './services/ledger/webLedger';
 exports.ledgerTypes = __importStar(require("./services/ledger/types"));
 exports.utils = __importStar(require("./services/utils"));
 exports.rangerHelper = __importStar(require("./services/rangeHelper"));
