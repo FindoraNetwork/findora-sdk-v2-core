@@ -22,6 +22,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sdk = exports.bigNumber = exports.feeService = exports.rangerHelper = exports.utils = exports.ledgerTypes = exports.isItNodeEnv = exports.nodeLedger = exports.webLedger = exports.getWebLedger = exports.getNodeLedger = exports.getLedger = void 0;
 var ledgerWrapper_1 = require("./services/ledger/ledgerWrapper");
@@ -34,6 +37,7 @@ Object.defineProperty(exports, "isItNodeEnv", { enumerable: true, get: function 
 // export { LedgerForNode } from './services/ledger/nodeLedger';
 // export { LedgerForWeb } from './services/ledger/webLedger';
 exports.ledgerTypes = __importStar(require("./services/ledger/types"));
+__exportStar(require("./services/ledger/types"), exports);
 exports.utils = __importStar(require("./services/utils"));
 exports.rangerHelper = __importStar(require("./services/rangeHelper"));
 exports.feeService = __importStar(require("./services/fee"));
