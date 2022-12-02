@@ -1,4 +1,8 @@
-export { getLedger, getNodeLedger, getWebLedger } from './services/ledger/ledgerWrapper';
+export { getLedger, getNodeLedger, getWebLedger, Ledger } from './services/ledger/ledgerWrapper';
+
+export { LedgerForNode } from './services/ledger/nodeLedger';
+export { LedgerForWeb } from './services/ledger/webLedger';
+
 export * as ledgerTypes from './services/ledger/types';
 export * as utils from './services/utils';
 export * as rangerHelper from './services/rangeHelper';
