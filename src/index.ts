@@ -14,6 +14,7 @@ export {
 // export { LedgerForWeb } from './services/ledger/webLedger';
 
 export * as ledgerTypes from './services/ledger/types';
+export * as FindoraWalletTypes from './types/findoraSdk';
 export * from './services/ledger/types';
 export * as utils from './services/utils';
 export * as rangerHelper from './services/rangeHelper';
