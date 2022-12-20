@@ -15,7 +15,7 @@
     "cli:build": "tsc",
     "start:run:once": "node dist/run.js",
     "start:once": "yarn build; yarn start:run:once",
-    "update-wasm": "yarn upgrade findora-wallet-wasm"
+    "update-v2": "yarn upgrade findora-wallet-wasm"
   },
   "author": "Findora Network <oleksandr@findora.org>",
   "license": "ISC",

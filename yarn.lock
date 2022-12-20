@@ -1307,7 +1307,7 @@ find-versions@^4.0.0:
 
 "findora-wallet-wasm@https://github.com/FindoraNetwork/wasm-js-bindings.git#develop":
   version "0.0.0"
-  resolved "https://github.com/FindoraNetwork/wasm-js-bindings.git#205820c3118d2a49f1db29799fd8e2e42d42c362"
+  resolved "https://github.com/FindoraNetwork/wasm-js-bindings.git#b72bc8ab9e01a52bedd62fa04f1ce3da1df4a58e"
 
 flat-cache@^3.0.4:
   version "3.0.4"
